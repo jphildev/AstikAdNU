@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AstikAdNU</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <div class="brand">
+      <h1>Create Account</h1>
+      <p>Register as a student</p>
+    </div>
+
+    <nav class="tabs">
+      <a href="studentRegister.html" class="active">Student</a>
+      <a href="facultyRegister.html">Faculty</a>
+    </nav>
+
+    <form action="#" method="post">
+      <input type="hidden" name="role" value="student">
+      <div class="row">
+        <label>First Name
+          <input type="text" name="first_name" autocomplete="given-name" required>
+        </label>
+        <label>Last Name
+          <input type="text" name="last_name" autocomplete="family-name" required>
+        </label>
+      </div>
+      <label>Student ID
+        <input type="text" name="student_id" placeholder="e.g. 202312345" required>
+      </label>
+      <div class="row">
+        <label>Program
+          <input type="text" name="program" placeholder="e.g. BSIT" required>
+        </label>
+        <label>Year Level
+          <select name="year_level" required>
+            <option value="" disabled selected>Select</option>
+            <option>1st Year</option>
+            <option>2nd Year</option>
+            <option>3rd Year</option>
+            <option>4th Year</option>
+          </select>
+        </label>
+      </div>
+      <label>Email
+        <input type="email" name="email" placeholder="you@gbox.adnu.edu.ph" autocomplete="email" required>
+      </label>
+      <label>Password
+        <input type="password" name="password" minlength="8" autocomplete="new-password" required>
+      </label>
+      <label>Confirm Password
+        <input type="password" name="confirm_password" minlength="8" autocomplete="new-password" required>
+      </label>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <p class="footer">Already have an account? <a href="login.html">Log in</a></p>
+  </main>
+</body>
+</html>
